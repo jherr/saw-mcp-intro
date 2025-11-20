@@ -1,0 +1,6 @@
+---
+description: Rules about writing MCP STDIO servers.
+globs: *.ts
+---
+
+Don't ever use `console.log`. MCP STDIO servers run over STDIO and STDOUT is reserved for the JSON-RPC 2.0 protocol. Use `console.error` to write log messages.
