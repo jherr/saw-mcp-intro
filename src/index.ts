@@ -2,10 +2,6 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 
-/*
-Never use console.log!!! Use console.error instead.
-*/
-
 const server = new McpServer({
   name: "example-mcp-server",
   version: "1.0.0",
